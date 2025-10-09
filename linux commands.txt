@@ -1,0 +1,58 @@
+1  mkdir aaa
+    2  cd aaa
+    3  touch a1
+    4  cat t1
+    8  mkdir mmm
+    9  cd mmm
+   10  touch m1
+   11  cat ->m1
+   12  cat m1
+   13  vi m2
+   14  cat m2
+   16  cat -n m2
+   17  cat >>m2
+   18  ll
+   19  clear
+   20  mkdir qqq
+   21  cd qqq
+   23  touch q1
+   26  cat ->q1
+   32  cat >>q2
+   34  cat -n q2
+   35  vi q2
+   40  vi q3
+   42  cat -n q3
+   43  rm -rf>q3
+   45  cat q1 q2 >q3
+   48  cp q3 q1
+   50  cp q1 q2
+   51  cat q2
+   52  cp q1 q3
+   54  cp q2 q3
+   56  vi q5
+   58  cp q3 q5
+   59  cat q5
+   60  cp q5 q3
+   61  cat q3
+   62  vi q6
+   64  cp q1 q6
+   65  cat q6
+   66  vi q7
+   69  cat q8
+   71  cat q7
+   72  cat q7>>q1
+   74  cat q7 >>q1
+   75  cat q1
+   77  mkdir ppp
+   78  cd ppp
+   80  touch p1 p2 p3
+   82  vi ppp
+   83  cat ppp
+   84  tree
+   86  cp q8 q9
+   87  cp q7 q8
+   88  ls -la
+   89  ls
+   90  date
+labex:ppp/ $ 
+
