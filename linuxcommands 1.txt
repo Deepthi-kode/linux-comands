@@ -1,0 +1,68 @@
+labex:aaa/ $ mkdir ddd
+labex:aaa/ $ cd ddd
+labex:ddd/ $ ls
+labex:ddd/ $ vi d1
+labex:ddd/ $ cat d1
+
+hello
+myself deepthi
+labex:ddd/ $ ll
+total 4.0K
+-rw-rw-r-- 1 labex labex 22 Oct 10 17:26 d1
+labex:ddd/ $ chmod 777 d1
+labex:ddd/ $ ll
+total 4.0K
+-rwxrwxrwx 1 labex labex 22 Oct 10 17:26 d1
+labex:ddd/ $ cat d1
+
+hello
+myself deepthi
+labex:ddd/ $ grep hello d1
+hello
+labex:ddd/ $ cat d1 | grep hello
+hello
+labex:ddd/ $ vi d1.sh
+labex:ddd/ $ vi d1 .sh
+2 files to edit
+labex:ddd/ $ cat d1
+
+hello
+myself deepthi
+labex:ddd/ $ vi d1.sh 
+labex:ddd/ $ ll
+total 8.0K
+-rwxrwxrwx 1 labex labex 22 Oct 10 17:34 d1
+-rw-rw-r-- 1 labex labex 46 Oct 10 17:35 d1.sh
+labex:ddd/ $ chmod 777 d1.sh
+labex:ddd/ $ ll
+total 8.0K
+-rwxrwxrwx 1 labex labex 22 Oct 10 17:34 d1
+-rwxrwxrwx 1 labex labex 46 Oct 10 17:35 d1.sh
+labex:ddd/ $ sh d1.sh
+labex:ddd/ $ ls
+d1  d1.sh  place
+labex:ddd/ $ cd place
+labex:place/ $ ls
+p1  p2  p3  p4
+labex:place/ $ history
+    1  mkdir aaa
+    2  cd aaa
+    4  vi a1.sh
+    6  chmod 777 a1.sh
+    8  cat a1
+    9  clear
+   10  mkdir ddd
+   11  cd ddd
+   13  vi d1
+   16  chmod 777 d1
+   19  grep hello d1
+   20  cat d1 | grep hello
+   22  vi d1 .sh
+   23  cat d1
+   24  vi d1.sh
+   26  chmod 777 d1.sh
+   27  ll
+   28  sh d1.sh
+   30  cd place
+   31  ls
+labex:place/ $ 
