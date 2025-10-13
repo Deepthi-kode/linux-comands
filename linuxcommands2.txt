@@ -1,0 +1,76 @@
+EC2 service in AWS:
+
+Amazon Elastic Compute Cloud (EC2) is a fundamental service within Amazon Web Services (AWS) that provides resizable computing capacity as virtual servers. It allows users to rent and manage virtual machines in the cloud, giving them the flexibility to scale computing resources.
+
+Key features of EC2:
+
+1. Elasticity and scalability: You can increase or decrease the number of instances or their size based on changing traffic and workload needs.
+
+2. On-Demand: Pay per second or hour for computing capacity without any long-term commitment.
+
+3. Reserved Instances: Commit to a 1- or 3-year term for significant discounts compared to On-Demand prices.
+
+4. Spot Instances: Purchase spare EC2 capacity at steep discounts, suitable for fault-tolerant or non-time-sensitive workloads.
+
+5. Savings Plans: Offers lower prices in exchange for a commitment to a consistent amount of compute usage.
+
+
+Identity and Access Management (IAM):
+
+ Is a foundational framework for controlling access to resources in a cloud computing environment. It provides a comprehensive and centralized way for organizations to manage digital identities for people, applications, and devices, defining who can access what  under what conditions.
+ 
+Key features of IAM:
+
+1.Identity federation: Enables a trust relationship between two or more identity management systems. 
+
+2.Auditing and monitoring: IAM continuously tracks and logs all user activities, such as access requests, login attempts, and permission      changes.
+ 
+3.Centralized control: All aspects of identity management and access can be controlled from a single, centralized platform, even across hybrid or multi-cloud environments. This simplifies administration and ensures consistent policy enforcement.
+
+4.Authorization: After a user is authenticated, authorization determines which specific resources they can access and what actions they can perform.
+ 
+5.Access policies: IAM defines granular permissions using policies that are attached to users, groups, or roles. These policies are written rules that define exactly what actions are allowed or denied on specific resources.
+
+Amazon Simple Storage Service (S3):
+ 
+It is a core service in Amazon Web Services (AWS) that provides highly scalable and durable object storage. Unlike block or file storage that uses a hierarchical folder structure, S3 uses a flat, object-based model. Data is stored in buckets, which are like containers, and each piece of data is stored as an object within a bucket.
+ 
+s3 contains Multiple storage classes:S3 offers a range of storage classes optimized for different use cases and access patterns, allowing for cost optimization.
+
+1.S3 Standard: For frequently accessed data with low latency.
+
+2.S3 Intelligent-Tiering: Automatically moves data between access tiers based on changing access patterns to optimize costs.
+
+3.S3 Standard-Infrequent Access (Standard-IA): For data accessed less frequently, but requires rapid retrieval when needed.
+
+4.S3 Glacier: Low-cost, long-term archive storage for data that is rarely accessed.
+
+ Virtual Private Cloud (VPC):
+
+It is a logically isolated, private network environment that a customer provisions within a public cloud. It gives users complete control over their network settings, allowing them to define their own IP address ranges, subnets, route tables, and network gateways. This creates a secure, custom network that behaves like a traditional data center, but with all the benefits of the cloud, such as scalability and flexibility.
+ 
+Common VPC use cases:
+
+1.Hybrid cloud deployments: Connect your on-premises data center to your VPC via a VPN or a dedicated connection for a seamless, unified IT environment.
+
+2.Multi-tier web applications: Create public subnets for web servers and private subnets for application servers and databases. This enhances security by preventing direct internet access to sensitive data.
+
+3.Big data and analytics: Run large-scale data processing jobs in a scalable and isolated environment.
+
+4.Disaster recovery: Replicate critical systems and data to a VPC in a different region to ensure business continuity.
+
+5.Enhanced security and compliance: For organizations in regulated industries like finance or healthcare, VPCs provide the granular control and isolation needed to meet strict security and compliance requirements. 
+
+
+Interview questions based on this four services:
+
+1.Explain the lifecycle of an EC2 instance?
+2.What is the purpose of an EC2 Key Pair?
+3.Explain the different components of an IAM system?
+4.What is Multi-Factor Authentication (MFA), and how does it work?
+5.What is Amazon S3, and what are its key features?
+6.Explain the difference between S3 buckets and objects?
+7.How does S3 achieve such high durability and availability?
+8.What is Amazon VPC?
+9.What are public and private subnets?
+10.What is a CIDR block, and how is it used in a VPC?
