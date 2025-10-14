@@ -212,26 +212,6 @@ You said:
 Q#	Your Answer	Correct?	Correct Answer	Notes/Explanation
 1	D	✅	D	All can have policies attached
 2	B	✅	B	Roles provide temporary creds
-3	B	✅	B	Max 5000 users per AWS account (default)4	B	✅	B	Effect: Allow or Deny
-5	False	✅	False	Default is no permissions
-6	B	❌	C	It’s AWS Policy Simulator (not "IAM Simulator")
-7	D	✅	D	All statements are true
-8	B	✅	B	Principal is user/role allowed or denied
-	B	✅	B	Explicit deny overrides allow
-10	C	✅	C	Conditions can restrict IP addresses
-11	C	✅	C	Max 20 managed policies per user
-12	B	✅	B	Roles allow delegation without long-term creds
-13	C	✅	C	Action specifies allowed/denied actions
-14	C	✅	C	Both resource- and identity-based policies exist
-15	A	✅	A	Permission boundaries set max permissions8	C	✅	C	Cross-account requires resource and  
-
-16	True	✅	True	Roles can be assumed by AWS services
-17	B	❌	C	Valid versions: 2008-10-17 and 2012-10-17 only (2015-05-01 invalid)
-18	C	✅	C	Cross-account requires resource and identity policies
-
-Q#	Your Answer	Correct?	Correct Answer	Notes/Explanation
-1	D	✅	D	All can have policies attached
-2	B	✅	B	Roles provide temporary creds
 3	B	✅	B	Max 5000 users per AWS account (default)
 4	B	✅	B	Effect: Allow or Deny
 5	False	✅	False	Default is no permissions
@@ -263,5 +243,6 @@ Q#	Your Answer	Correct?	Correct Answer	Notes/Explanation
 Summary:
 
 You got 25 out of 30 correct.
+
 
 The main errors were Q6, Q17, Q26, Q28, Q29, and Q30
