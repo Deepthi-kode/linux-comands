@@ -1,0 +1,267 @@
+
+mock test questions on Iam service  — 30 Questions
+
+1. Which of the following entities can have an IAM policy attached?
+
+A) User
+B) Group
+C) Role
+D) All of the above
+
+2. What type of credential does an IAM role provide?
+
+A) Permanent credentials
+B) Temporary credentials
+C) No credentials
+D) None of the above 
+
+3. What is the default maximum number of IAM users per AWS account?
+
+A) 100
+B) 5000
+C) 10000
+D) No limit
+
+4. What does an IAM policy’s “Effect” element specify?
+
+A) The list of actions
+B) Whether to allow or deny the actions
+C) The AWS resource affected
+D) The version of the policy language
+
+5. True or False: By default, all IAM users have full access to AWS services.
+
+6. Which AWS service allows you to simulate IAM policies to test permissions?
+
+A) AWS IAM Analyzer
+B) AWS IAM Simulator
+C) AWS Policy Simulator
+D) AWS Access Analyze rest on iam service in aws
+
+7. Which statement about IAM groups is true?
+
+A) You can attach policies to groups
+B) Users inherit the policies attached to the groups they belong to
+C) Groups cannot be nested
+D) All of the above
+
+
+8. What is a principal in an IAM policy?
+
+A) The AWS resource being accessed
+B) The user or role allowed or denied access
+C) The list of permissions
+D) The condition applied to a policy
+
+9. What happens if a user has both an explicit Allow and an explicit Deny for the same action?
+
+A) Access is allowed
+B) Access is denied
+C) The policy with the latest timestamp is applied
+D) Access depends on the service
+
+10. Which of the following can be used to restrict access based on the requester’s IP address?
+
+A) Resource policy
+B) Identity-based policy
+C) Conditions in the policy
+D) ACLs
+
+11. What is the maximum number of IAM policies you can attach to a single user?
+
+A) 5
+B) 10
+C) 20
+D) 50
+
+12. Which AWS IAM feature allows delegation of access to AWS resources without sharing long-term credentials?
+
+A) IAM users
+B) IAM roles
+C) IAM groups
+D) IAM policies
+
+13. Which JSON element in a policy specifies the actions allowed or denied?
+
+A) Effect
+B) Resource
+C) Action
+D) Principal
+
+14. How do resource-based policies differ from identity-based policies?
+
+A) Resource-based policies are attached to AWS resources
+B) Identity-based policies are attached to users, groups, or roles
+C) Both A and B
+D) None of the above
+
+15. What is a permission boundary in AWS IAM?
+
+A) A limit set on the permissions an entity can have
+B) A type of policy attached to groups
+C) A condition in the policy
+D) A resource-based policy
+
+16. True or False: An IAM role can be assumed by AWS services like EC2.
+
+17. Which of the following is NOT a valid IAM policy version?
+
+A) 2012-10-17
+B) 2008-10-17
+C) 2015-05-01
+D) None of the above
+
+18. What type of policy must be used to allow cross-account access?
+
+A) Identity-based policy only
+B) Resource-based policy only
+C) Both identity-based and resource-based policies
+D) None of the above
+
+19. Which of the following is a best practice when managing AWS credentials?
+
+A) Use root account credentials for day-to-day tasks
+B) Use IAM roles for applications running on EC2
+C) Store credentials in source code
+D) Share credentials with team members
+
+20. What is the purpose of AWS Organizations in relation to IAM?
+
+A) Manage multiple AWS accounts centrally
+B) Apply service control policies (SCPs)
+C) Enable consolidated billing
+D) All of the above
+
+21. How long are credentials from an assumed IAM role valid by default?
+
+A) 15 minutes
+B) 1 hour
+C) 1 day
+D) 12 hours
+
+22. What happens if you delete a role that is currently being assumed by an active session?
+
+A) The session immediately ends
+B) The session continues until expiration
+C) The session is revoked after 5 minutes
+D) AWS prevents deletion of assumed roles
+
+23. Which AWS service integrates with IAM to provide multi-factor authentication (MFA)?
+
+A) AWS Config
+B) AWS KMS
+C) AWS STS
+D) AWS IAM itself
+
+24. What is the IAM entity that represents your AWS account?
+
+A) Root user
+B) IAM user
+C) IAM role
+D) Group
+
+25. Which of the following is NOT a valid IAM principal?
+
+A) An AWS account
+B) An IAM user
+C) An external user authenticated via SAML
+D) An AWS region
+
+
+26. What does the AWS STS service do?
+
+A) Manage IAM users and groups
+B) Provide temporary security credentials
+C) Encrypt data at rest
+D) Manage billing and cost reports
+
+27. Can an IAM user access the AWS Management Console without permissions?
+
+A) Yes, by default
+B) No, the user must have console login permissions
+C) Only root users can access the console
+D) Yes, but only with MFA enabled
+
+28. Which IAM policy element defines the AWS resources to which the policy applies?
+
+A) Sid
+B) Resource
+C) Action
+D) Effect
+
+29. What is the default permission for all IAM entities?
+
+A) Allow all actions
+B) Deny all actions
+C) Allow only read actions
+D) None of the above
+
+30. What is the best way to grant temporary access to your AWS account for external consultants?
+
+A) Create an IAM user with a password
+B) Share your root account credentials
+C) Create an IAM role and allow them to assume it
+D) Create an IAM group and add them
+
+
+
+You said:
+1d 2b 3b 4b 5false 6b 7d 8b 9b10c 11c12b 13c 14c 15 a 16true 17b 18c 19b 20d 21b 22b 23d 24a 25d 26 a 27b 28c 29d 30d
+
+
+Q#	Your Answer	Correct?	Correct Answer	Notes/Explanation
+1	D	✅	D	All can have policies attached
+2	B	✅	B	Roles provide temporary creds
+3	B	✅	B	Max 5000 users per AWS account (default)4	B	✅	B	Effect: Allow or Deny
+5	False	✅	False	Default is no permissions
+6	B	❌	C	It’s AWS Policy Simulator (not "IAM Simulator")
+7	D	✅	D	All statements are true
+8	B	✅	B	Principal is user/role allowed or denied
+	B	✅	B	Explicit deny overrides allow
+10	C	✅	C	Conditions can restrict IP addresses
+11	C	✅	C	Max 20 managed policies per user
+12	B	✅	B	Roles allow delegation without long-term creds
+13	C	✅	C	Action specifies allowed/denied actions
+14	C	✅	C	Both resource- and identity-based policies exist
+15	A	✅	A	Permission boundaries set max permissions8	C	✅	C	Cross-account requires resource and  
+
+16	True	✅	True	Roles can be assumed by AWS services
+17	B	❌	C	Valid versions: 2008-10-17 and 2012-10-17 only (2015-05-01 invalid)
+18	C	✅	C	Cross-account requires resource and identity policies
+
+Q#	Your Answer	Correct?	Correct Answer	Notes/Explanation
+1	D	✅	D	All can have policies attached
+2	B	✅	B	Roles provide temporary creds
+3	B	✅	B	Max 5000 users per AWS account (default)
+4	B	✅	B	Effect: Allow or Deny
+5	False	✅	False	Default is no permissions
+6	B	❌	C	It’s AWS Policy Simulator (not "IAM Simulator")
+7	D	✅	D	All statements are true
+8	B	✅	B	Principal is user/role allowed or denied
+9	B	✅	B	Explicit deny overrides allow
+10	C	✅	C	Conditions can restrict IP addresses
+11	C	✅	C	Max 20 managed policies per user
+12	B	✅	B	Roles allow delegation without long-term creds
+13	C	✅	C	Action specifies allowed/denied actions
+14	C	✅	C	Both resource- and identity-based policies exist
+15	A	✅	A	Permission boundaries set max permissions
+16	True	✅	True	Roles can be assumed by AWS services
+17	B	❌	C	Valid versions: 2008-10-17 and 2012-10-17 only (2015-05-01 invalid)
+18	C	✅	C	Cross-account requires resource and identity policies
+19	B	✅	B	Use IAM roles for EC2 apps (best practice)
+20	D	✅	D	Organizations manage accounts, SCPs, billing
+21	B	✅	B	Default role session is 1 hour, can extend to 12h
+22	B	✅	B	Existing sessions continue until expiration
+23	D	✅	D	IAM integrates with MFA
+24	A	✅	A	Root user represents AWS account
+25	D	✅	D	AWS region is not a principal
+26	A	❌	B	STS issues temporary credentials, doesn’t manage users
+27	B	✅	B	Console access requires permissions
+28	C	❌	B	Resource specifies resources in policies, not Action
+29	D	❌	B	Default is deny all actions
+30	D	❌	C	Best practice: create role and allow assumption for temporary access
+Summary:
+
+You got 25 out of 30 correct.
+
+The main errors were Q6, Q17, Q26, Q28, Q29, and Q30
